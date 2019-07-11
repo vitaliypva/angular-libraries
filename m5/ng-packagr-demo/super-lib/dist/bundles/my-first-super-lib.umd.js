@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/common')) :
-    typeof define === 'function' && define.amd ? define('my-first-super-lib', ['exports', '@angular/core', '@angular/common'], factory) :
-    (global = global || self, factory(global['my-first-super-lib'] = {}, global.ng.core, global.ng.common));
-}(this, function (exports, core, common) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/common'), require('@angular/forms')) :
+    typeof define === 'function' && define.amd ? define('my-first-super-lib', ['exports', '@angular/core', '@angular/common', '@angular/forms'], factory) :
+    (global = global || self, factory(global['my-first-super-lib'] = {}, global.ng.core, global.ng.common, global.ng.forms));
+}(this, function (exports, core, common, forms) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -28,11 +28,12 @@
 
     var SuperLibComponent = /** @class */ (function () {
         function SuperLibComponent() {
+            this.msg = "component Message";
         }
         SuperLibComponent = __decorate([
             core.Component({
                 selector: 'super-lib-component',
-                template: "<p>\r\n  Hello from an external template\r\n</p>\r\n"
+                template: "<p>\r\n  Hello from an external template: {{msg}}\r\n</p>\r\n"
             })
         ], SuperLibComponent);
         return SuperLibComponent;
@@ -43,7 +44,7 @@
         }
         SuperLibModule = __decorate([
             core.NgModule({
-                imports: [common.CommonModule],
+                imports: [common.CommonModule, forms.FormsModule],
                 declarations: [SuperLibComponent],
                 exports: [SuperLibComponent],
             })

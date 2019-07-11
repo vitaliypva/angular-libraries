@@ -4,4 +4,6 @@ import { Component } from '@angular/core';
   selector: 'super-lib-component',
   templateUrl: 'super-lib.component.html',
 })
-export class SuperLibComponent {}
+export class SuperLibComponent {
+  public msg = "component Message"
+}
