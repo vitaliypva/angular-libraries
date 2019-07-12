@@ -43,6 +43,7 @@ namespace Backend
             });
 
             services.AddScoped<IBookRepository, BookRepository>();
+           // services.AddScoped<BookRepository>();
             services.AddRouting(options => options.LowercaseUrls = true);
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
