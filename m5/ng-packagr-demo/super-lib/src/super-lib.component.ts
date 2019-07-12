@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: 'super-lib.component.html',
 })
 export class SuperLibComponent {
-  public msg = "component Message"
+  public msg = 'component Message';
 }

@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 let SuperLibComponent = class SuperLibComponent {
     constructor() {
-        this.msg = "component Message";
+        this.msg = 'component Message';
     }
 };
 SuperLibComponent = __decorate([

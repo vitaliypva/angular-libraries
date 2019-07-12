@@ -28,7 +28,7 @@
 
     var SuperLibComponent = /** @class */ (function () {
         function SuperLibComponent() {
-            this.msg = "component Message";
+            this.msg = 'component Message';
         }
         SuperLibComponent = __decorate([
             core.Component({
