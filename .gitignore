@@ -6,3 +6,8 @@
 /m5/**/frontend/node_modules/
 /m5/**/end/frontend/dist/
 /m4/demo3-typescript-package/first-consumer/node_modules/
+/m5/angular-cli-app/end/backend/aspnetcore/.vs/BackendSolution/v16/Server/sqlite3/storage.ide
+/m5/angular-cli-app/end/backend/aspnetcore/.vs/Backend/DesignTimeBuild/.dtbcache
+/m5/angular-cli-app/end/backend/aspnetcore/.vs/BackendSolution/v16/Server/sqlite3/db.lock
+/m5/angular-cli-app/end/backend/aspnetcore/.vs/BackendSolution/v16/Server/sqlite3/storage.ide-shm
+/m5/angular-cli-app/end/backend/aspnetcore/.vs/BackendSolution/v16/Server/sqlite3/storage.ide-wal
