@@ -12,8 +12,8 @@ import { CustomLoggerService } from './services/custom-logger.service';
       appPrefix: 'pluralsight-app',
     }),
   ],
-  providers: [
-    { provide: AngularConsoleLoggerService, useClass: CustomLoggerService },
-  ],
+  // providers: [
+  //   { provide: AngularConsoleLoggerService, useClass: CustomLoggerService },
+  // ],
 })
 export class CoreModule {}
